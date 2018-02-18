@@ -45,6 +45,9 @@ set number
 set tabstop=4
 set shiftwidth=4
 set mouse=a
+vnoremap <C-c> "+y
+noremap <C-v> "+p
+inoremap <C-v> <C-o>"+p
 
 filetype plugin on
 filetype indent on
