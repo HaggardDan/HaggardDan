@@ -1,0 +1,19 @@
+! URxvt -------------------------------------------------------------------- 
+URxvt.foreground:   	#c5c8c6
+URxvt.background:   	#1d1f21
+URxvt.cursorColor:  	#c5c8c6
+
+URxvt.font: 		xft:inconsolata:pixelsize=14
+
+URxvt.scrollBar_right:	true
+URxvt.scrollstyle:      plain
+URxvt.secondaryScroll:  true
+
+URxvt.iso14755: 	false
+
+URxvt.termName:		rxvt-256color
+
+URxvt.keysym.Shift-Control-V: eval:paste_clipboard
+URxvt.keysym.Shift-Control-C: eval:selection_to_clipboard
+
+
