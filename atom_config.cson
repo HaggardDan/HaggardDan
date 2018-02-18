@@ -1,0 +1,22 @@
+"*":
+  "atom-material-ui":
+    tabs:
+      compactTabs: true
+    ui:
+      panelContrast: true
+  autosave:
+    enabled: true
+  core:
+    autoHideMenuBar: true
+    telemetryConsent: "no"
+    themes: [
+      "atom-material-ui"
+      "atom-material-syntax"
+    ]
+  editor:
+    scrollPastEnd: true
+    softWrap: true
+  "exception-reporting":
+    userId: "9bd3b0b0-7985-406d-97a0-dd22d5547e7c"
+  welcome:
+    showOnStartup: false
