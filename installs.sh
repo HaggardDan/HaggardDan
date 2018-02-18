@@ -4,6 +4,8 @@
 
 sudo apt install rxvt-unicode-256color
 cp vtwheel ~/.urxvt/ext/vtwheel
+# exec --no-startup-id urxvtd -q -f -o
+
 
 # python
 
@@ -32,4 +34,10 @@ cd light
 make && make install
 # bindsym XF86MonBrightnessUp exec light -A 5 # increase screen brightness
 # bindsym XF86MonBrightnessDown exec light -U 5 # decrease screen brightness
+#
+# bindsym F10 exec --no-startup-id pactl set-sink-volume 1 +5% #increase sound volume
+# bindsym F9 exec --no-startup-id pactl set-sink-volume 1 -5% #decrease sound volume
+# bindsym F8 exec --no-startup-id pactl set-sink-mute 1 toggle # mute sound
 
+# bindsym $mod+m bar mode toggle
+# new_window pixel 1
