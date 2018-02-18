@@ -22,7 +22,7 @@ vim +PluginInstall +qall
 sudo add-apt-repository ppa:webupd8team/atom
 sudo apt update
 sudo apt install atom
-apm install minimap atom-material-ui atom-material-syntax go-plus git-blame linter-pylama teletype
+apm install minimap atom-material-ui atom-material-syntax go-plus git-blame linter-pylama teletype vim-mode-plus
 
 # backlight
 
