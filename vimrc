@@ -14,7 +14,10 @@ Plugin 'VundleVim/Vundle.vim'
 " Keep Plugin commands between vundle#begin/end.
 " plugin on GitHub repo
 Bundle 'chase/vim-ansible-yaml'
+Plugin 'hdima/python-syntax'
+
 Plugin 'sickill/vim-monokai'
+Plugin 'kristijanhusak/vim-hybrid-material'
 
 
 " All of your Plugins must be added before the following line
@@ -34,7 +37,12 @@ filetype plugin indent on    " required
 if &term!="xterm"
 	set t_Co=256
 	syntax enable
-	colorscheme monokai
+	"colorscheme monokai
+	
+	let g:enable_bold_font = 1
+	"let g:enable_italic_font = 1
+	set background=dark
+	colorscheme hybrid_reverse
 endif
 
 
