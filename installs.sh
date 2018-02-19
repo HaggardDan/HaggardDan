@@ -1,5 +1,7 @@
 
 
+
+
 # rxvt-unicode
 
 sudo apt install rxvt-unicode-256color fonts-inconsolata
@@ -9,9 +11,12 @@ cp vtwheel ~/.urxvt/ext/vtwheel
 
 # python
 
-sudo apt install python-pip
+sudo apt install python-pip direnv
 sudo pip install --upgrade pip
-sudo pip install virtualenv pylama
+sudo pip install virtualenv
+echo "layout python" > ~/.envrc
+# export DIRENV_LOG_FORMAT=""
+# eval "$(direnv hook bash) &> /dev/null"
 
 # vim
 
