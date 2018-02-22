@@ -2,7 +2,7 @@
 
 sudo apt install -y rxvt-unicode-256color fonts-inconsolata
 cat Xresources >> ~/.Xdefaults
-mkdir -d ~/.urxvt/ext
+mkdir -p ~/.urxvt/ext
 cp vtwheel ~/.urxvt/ext/vtwheel
 # exec --no-startup-id urxvtd -q -f -o
 
