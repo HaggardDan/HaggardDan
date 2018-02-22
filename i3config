@@ -32,6 +32,8 @@ exec --no-startup-id xmodmap -e "clear Mod4"
 # exec --no-startup-id setxkbmap -layout us -option caps:escape
 # exec --no-startup-id xinput set-prop "DLL07BF:01 06CB:7A13 Touchpad" "libinput Tapping Enabled" 1
 # exec --no-startup-id xinput set-prop "DLL07BF:01 06CB:7A13 Touchpad" "libinput Accel Speed" 0.7
+# exec --no-startup-id numlockx on
+# exec --no-startup-id xset m 0 0
 
 
 # no title bars
@@ -55,6 +57,10 @@ bindsym F8 exec --no-startup-id pactl set-sink-mute 1 toggle
 # bindsym XF86AudioMute exec --no-startup-id pactl set-sink-mute alsa_output.pci-0000_00_1f.3.analog-stereo toggle
 # bindsym XF86MonBrightnessUp exec --no-startup-id light -A 5
 # bindsym XF86MonBrightnessDown exec --no-startup-id light -U 5
+# bindsym XF86Sleep exec i3lock -c 000000
+# bindsym XF86AudioPlay exec --no-startup-id playerctl play-pause
+# bindsym XF86AudioNext exec --no-startup-id playerctl next
+# bindsym XF86AudioPrev exec --no-startup-id playerctl previous
 
 
 ### END CUSTOM ###
