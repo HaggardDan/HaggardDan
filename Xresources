@@ -2,7 +2,7 @@
 URxvt.perl-ext-common:	default,vtwheel
 
 URxvt.foreground:   	#c5c8c6
-URxvt.background:   	#1d1f21
+URxvt.background:   	#2b3133
 URxvt.cursorColor:  	#c5c8c6
 
 URxvt.font: 		xft:inconsolata:pixelsize=14
