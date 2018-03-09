@@ -53,3 +53,6 @@ sudo apt install -y feh xautolock
 sudo cp i3lock.service /etc/systemd/system/.
 sudo systemctl enable i3lock.service
 
+# automount stuff
+sudo apt install -y udiskie
+
