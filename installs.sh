@@ -20,9 +20,9 @@ direnv allow ~/.
 # go
 sudo add-apt-repository -y ppa:gophers/archive
 sudo apt update
-sudo apt install golang-1.9-go
-sudo ln -s /usr/lib/go-1.9/bin/go /usr/bin/go
-sudo ln -s /usr/lib/go-1.9/bin/gofmt /usr/bin/gofmt
+sudo apt install golang-1.10-go
+sudo ln -s /usr/lib/go-1.10/bin/go /usr/bin/go
+sudo ln -s /usr/lib/go-1.10/bin/gofmt /usr/bin/gofmt
 
 # vim
 
@@ -55,4 +55,7 @@ sudo systemctl enable i3lock.service
 
 # automount stuff
 sudo apt install -y udiskie
+
+# VPN
+sudo apt install -y network-manager-openconnect-gnome
 
