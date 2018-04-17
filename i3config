@@ -62,7 +62,7 @@ bindsym F8 exec --no-startup-id pactl set-sink-mute 1 toggle
 # bindsym XF86AudioPlay exec --no-startup-id playerctl play-pause
 # bindsym XF86AudioNext exec --no-startup-id playerctl next
 # bindsym XF86AudioPrev exec --no-startup-id playerctl previous
-
+# bindsym $mod+n exec ~/.config/i3/bin/toggle_vpn
 
 ### END CUSTOM ###
 
