@@ -48,7 +48,7 @@ make && sudo make install
 cd ..
 
 # system
-sudo apt install -y feh xautolock
+sudo apt install -y feh xautolock pavucontrol
 # this needs to be templated
 sudo cp i3lock.service /etc/systemd/system/.
 sudo systemctl enable i3lock.service
@@ -64,4 +64,8 @@ sudo apt-key adv --keyserver hkp://keyserver.ubuntu.com:80 --recv-keys 0DF731E45
 echo deb http://repository.spotify.com stable non-free | sudo tee /etc/apt/sources.list.d/spotify.list
 sudo apt update
 sudo apt -y install spotify-client
+
+# playerctl
+curl -L https://github.com/acrisci/playerctl/releases/download/v0.6.0/playerctl-0.6.0_amd64.deb > ~/Downloads/playerctl-0.6.0_amd64.deb
+sudo dpkg -i ~/Downloads/playerctl-0.6.0_amd64.deb
 
