@@ -69,3 +69,11 @@ sudo apt -y install spotify-client
 curl -L https://github.com/acrisci/playerctl/releases/download/v0.6.0/playerctl-0.6.0_amd64.deb > ~/Downloads/playerctl-0.6.0_amd64.deb
 sudo dpkg -i ~/Downloads/playerctl-0.6.0_amd64.deb
 
+# umonitor
+git clone https://github.com/rliou92/umonitor.git
+sudo apt -y install libxrandr-dev libconfig-dev libxcb-randr0-dev
+cd umonitor
+make && sudo make install
+cd ..
+umonitor -s default
+
