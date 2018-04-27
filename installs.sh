@@ -77,3 +77,6 @@ make && sudo make install
 cd ..
 umonitor -s default
 
+# slim
+sudo apt -y install slim
+
