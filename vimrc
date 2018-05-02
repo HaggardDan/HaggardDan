@@ -19,6 +19,7 @@ Plugin 'hdima/python-syntax'
 Plugin 'sickill/vim-monokai'
 Plugin 'kristijanhusak/vim-hybrid-material'
 
+Plugin 'scrooloose/syntastic'
 
 " All of your Plugins must be added before the following line
 call vundle#end()            " required
@@ -60,3 +61,12 @@ inoremap <C-v> <C-o>"+p
 filetype plugin on
 filetype indent on
 
+" Syntastic
+set statusline+=%#warningmsg#
+set statusline+=%{SyntasticStatuslineFlag()}
+set statusline+=%*
+
+let g:syntastic_always_populate_loc_list = 1
+let g:syntastic_auto_loc_list = 1
+let g:syntastic_check_on_open = 1
+let g:syntastic_check_on_wq = 0

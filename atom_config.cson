@@ -4,6 +4,8 @@
       compactTabs: true
     ui:
       panelContrast: true
+  "atom-scale-factor":
+    setLatest: true
   "autocomplete-plus":
     confirmCompletion: "tab always, enter when suggestion explicitly selected"
   autosave:
