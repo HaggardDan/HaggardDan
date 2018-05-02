@@ -6,7 +6,7 @@ Before=sleep.target
 User=dan
 Type=forking
 Environment=DISPLAY=:0
-ExecStart=/usr/bin/i3lock -t -i /home/dan/Pictures/megaman.png
+ExecStart=/usr/bin/i3lock -t -i /home/dan/Pictures/lock.png
 
 [Install]
 WantedBy=sleep.target
