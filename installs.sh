@@ -46,6 +46,7 @@ sudo apt install -y help2man
 cd light
 make && sudo make install
 cd ..
+light -c -S 5
 
 # system
 sudo apt install -y feh xautolock pavucontrol
