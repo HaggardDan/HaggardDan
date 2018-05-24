@@ -59,6 +59,8 @@ sudo apt install -y udiskie
 
 # VPN
 sudo apt install -y network-manager-openconnect-gnome
+mkdir ~/.config/i3/bin
+cp toggle_vpn ~/.config/i3/bin/.
 
 # spotify
 sudo apt-key adv --keyserver hkp://keyserver.ubuntu.com:80 --recv-keys 0DF731E45CE24F27EEEB1450EFDC8610341D9410
