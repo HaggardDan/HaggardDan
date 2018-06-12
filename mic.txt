@@ -5,4 +5,9 @@ pactl load-module module-echo-cancel
 
 # you can also add it to /etc/pulse/default.pa
 
+# loopback so you can hear how your mic sounds
+pactl load-module module-loopback latency_msec=1
+
+# unload it.
+pactl unload-module module-loopback
 
