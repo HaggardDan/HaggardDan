@@ -1,0 +1,8 @@
+
+
+# noise cancelling for linux mics
+pactl load-module module-echo-cancel
+
+# you can also add it to /etc/pulse/default.pa
+
+
