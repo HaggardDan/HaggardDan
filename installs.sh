@@ -86,3 +86,7 @@ sudo apt -y install slim
 # video
 sudo apt -y install kazam kendlive vlc
 
+# sleep-to-hibernate
+sudo cp sleep.conf /etc/systemd/.
+# edit /etc/systemd/login.conf and change lidclose to susped-then-hibernate
+
