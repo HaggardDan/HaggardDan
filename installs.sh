@@ -89,4 +89,7 @@ sudo apt -y install kazam kendlive vlc
 # sleep-to-hibernate
 sudo cp sleep.conf /etc/systemd/.
 # edit /etc/systemd/login.conf and change lidclose to susped-then-hibernate
-
+# add resume=/dev/mapper/ubuntu--vg-swap_1 to /etc/default/grub
+# sudo update-grub
+# add RESUME=/dev/mapper/ubuntu--vg-swap_1 to /etc/initramfs-tools/conf.d/resume
+# sudo update-initramfs -u -k all
