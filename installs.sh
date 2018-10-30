@@ -24,6 +24,11 @@ sudo apt install golang-1.10-go
 sudo ln -s /usr/lib/go-1.10/bin/go /usr/bin/go
 sudo ln -s /usr/lib/go-1.10/bin/gofmt /usr/bin/gofmt
 
+# nim
+curl https://nim-lang.org/choosenim/init.sh -sSf | sh
+echo "export PATH=/home/dan/.nimble/bin:$PATH" >> ~/.bashrc
+
+
 # vim
 
 sudo apt install -y vim-gtk
@@ -43,9 +48,9 @@ cp atom_config.cson ~/.atom/config.cson
 # backlight
 
 git clone https://github.com/haikarainen/light.git
-sudo apt install -y help2man
+sudo apt install -y help2man autoconf
 cd light
-make && sudo make install
+./autogen.sh && ./configure && make && sudo make install
 cd ..
 light -c -S 5
 
