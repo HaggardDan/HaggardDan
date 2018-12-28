@@ -5,6 +5,9 @@
     packages:
       - rxvt-unicode-256color
       - fonst-inconsolata
+  become: yes
+  become_user: root
+  
 
 - name: Template .Xdefaults
   template:
@@ -13,4 +16,14 @@
     mode: 0644
 
 - name: Create directory .urxvt/ext
+  file:
+    path: "{{ homedir }}/.urxvt/ext"
+    state: directory
+
+- name: Copy vtwheel script in the .urxvt/ext
+  copy:
+    src: vtwheel
+    dest: "{{ homedir }}/.urxvt/ext/vtwheel"
+    mode: 0644
+
   
