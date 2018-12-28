@@ -1,0 +1,12 @@
+---
+- hosts: all
+  tasks:
+    - name: rxvt apt install
+      apt:
+        name: "{{ packages }}"
+      vars:
+        packages:
+          - rxvt-unicode-256color
+          - fonst-inconsolata
+    
+    

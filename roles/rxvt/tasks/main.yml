@@ -1,0 +1,16 @@
+- name: rxvt apt install
+  apt:
+    name: "{{ packages }}"
+  vars:
+    packages:
+      - rxvt-unicode-256color
+      - fonst-inconsolata
+
+- name: Template .Xdefaults
+  template:
+    src: Xdefaults.j2
+    dest: "{{ homedir }}/.Xdefaults"
+    mode: 0644
+
+- name: Create directory .urxvt/ext
+  
