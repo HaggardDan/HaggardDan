@@ -86,3 +86,7 @@ sudo apt -y install slim
 # video
 sudo apt -y install kazam kendlive vlc
 
+# vscode
+# in VMs this makes it move fast enough
+# "vim.statusBarColorControl": false,
+
