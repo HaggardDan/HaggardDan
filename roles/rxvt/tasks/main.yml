@@ -25,5 +25,3 @@
     src: vtwheel
     dest: "{{ homedir }}/.urxvt/ext/vtwheel"
     mode: 0644
-
-  

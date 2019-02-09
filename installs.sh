@@ -90,3 +90,9 @@ sudo apt -y install kazam kendlive vlc
 # in VMs this makes it move fast enough
 # "vim.statusBarColorControl": false,
 
+# i3pystatus
+virtualenv -p python3 ~/.config/i3/venv
+~/.config/i3/venv/bin/pip install i3pystatus netifaces colour
+cp status.py ~/.config/i3/.
+# status_command ~/.config/i3/venv/bin/python ~/.config/i3/status.py
+ 
