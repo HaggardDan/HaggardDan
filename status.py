@@ -65,6 +65,10 @@ status.register("network",
     interface="enp0s3",
     format_up="{v4cidr}",)
 
+status.register("netmanagervpn",
+        vpn_name="SMHQ",
+        format="{vpn_name} {status}",)
+
 # Note: requires both netifaces and basiciw (for essid and quality)
 #status.register("network",
 #    interface="wlan0",
