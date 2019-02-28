@@ -24,12 +24,18 @@ sudo apt install golang-1.10-go
 sudo ln -s /usr/lib/go-1.10/bin/go /usr/bin/go
 sudo ln -s /usr/lib/go-1.10/bin/gofmt /usr/bin/gofmt
 
+# nim
+curl https://nim-lang.org/choosenim/init.sh -sSf | sh
+echo "export PATH=/home/dan/.nimble/bin:$PATH" >> ~/.bashrc
+
+
 # vim
 
 sudo apt install -y vim-gtk
 cp vimrc ~/.vimrc
-git clone https://github.com/VundleVim/Vundle.vim.git ~/.vim/bundle/Vundle.vim
-vim +PluginInstall +qall
+curl -fLo ~/.vim/autoload/plug.vim --create-dirs \
+    https://raw.githubusercontent.com/junegunn/vim-plug/master/plug.vim
+vim +PlugInstall +qall
 
 # atom
 
@@ -42,9 +48,9 @@ cp atom_config.cson ~/.atom/config.cson
 # backlight
 
 git clone https://github.com/haikarainen/light.git
-sudo apt install -y help2man
+sudo apt install -y help2man autoconf
 cd light
-make && sudo make install
+./autogen.sh && ./configure && make && sudo make install
 cd ..
 light -c -S 5
 
@@ -97,3 +103,10 @@ cp status.py ~/.config/i3/.
 cp netmanagervpn.py ../i3/venv/lib/python3.6/site-packages/i3pystatus/.
 # status_command ~/.config/i3/venv/bin/python ~/.config/i3/status.py
  
+# sleep-to-hibernate
+sudo cp sleep.conf /etc/systemd/.
+# edit /etc/systemd/login.conf and change lidclose to susped-then-hibernate
+# add resume=/dev/mapper/ubuntu--vg-swap_1 to /etc/default/grub
+# sudo update-grub
+# add RESUME=/dev/mapper/ubuntu--vg-swap_1 to /etc/initramfs-tools/conf.d/resume
+# sudo update-initramfs -u -k all
