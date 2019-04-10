@@ -99,3 +99,16 @@ sudo cp sleep.conf /etc/systemd/.
 # sudo update-grub
 # add RESUME=/dev/mapper/ubuntu--vg-swap_1 to /etc/initramfs-tools/conf.d/resume
 # sudo update-initramfs -u -k all
+
+# polybar
+sudo apt-get install cmake cmake-data libcairo2-dev libxcb1-dev libxcb-ewmh-dev libxcb-icccm4-dev libxcb-image0-dev libxcb-randr0-dev libxcb-util0-dev libxcb-xkb-dev pkg-config python-xcbgen xcb-proto libxcb-xrm-dev i3-wm libasound2-dev libmpdclient-dev libiw-dev libcurl4-openssl-dev libpulse-dev libxcb-composite0-dev xcb libxcb-ewmh2
+git clone --recursive https://github.com/jaagr/polybar
+mkdir polybar/build
+cd polybar/build
+cmake ../
+make
+sudo make install
+cd ../..
+git clone https://github.com/stark/siji && cd siji && ./install.sh
+sudo mv /etc/fonts/conf.d/70-no-bitmaps.conf /etc/fonts/conf.d/70-no-bitmaps.conf.disabled
+
