@@ -78,6 +78,108 @@ bottom = true
 ;scroll-up = i3wm-wsnext
 ;scroll-down = i3wm-wsprev
 
+[bar/bar2]
+;monitor = ${env:MONITOR:HDMI-1}
+monitor = HDMI-0
+width = 100%
+height = 32
+;offset-x = 1%
+;offset-y = 1%
+radius = 6.0
+fixed-center = false
+
+background = ${colors.background}
+foreground = ${colors.foreground}
+
+line-size = 3
+line-color = #f00
+
+border-size = 4
+border-color = #00000000
+
+padding-left = 0
+padding-right = 2
+
+module-margin-left = 1
+module-margin-right = 2
+
+font-0 = xft:inconsolata 8;1
+font-1 = unifont:fontformat=truetype:size=18:antialias=false;0
+font-2 = siji:size=8;1
+
+modules-left = bspwm i3
+modules-center = 
+modules-right = date powermenu
+
+tray-position =
+tray-padding = 2
+;tray-transparent = true
+;tray-background = #0063ff
+
+;wm-restack = bspwm
+wm-restack = i3
+
+bottom = true
+
+;override-redirect = true
+
+;scroll-up = bspwm-desknext
+;scroll-down = bspwm-deskprev
+
+;scroll-up = i3wm-wsnext
+;scroll-down = i3wm-wsprev
+
+[bar/bar1]
+;monitor = ${env:MONITOR:HDMI-1}
+monitor = DP-0
+width = 100%
+height = 32
+;offset-x = 1%
+;offset-y = 1%
+radius = 6.0
+fixed-center = false
+
+background = ${colors.background}
+foreground = ${colors.foreground}
+
+line-size = 3
+line-color = #f00
+
+border-size = 4
+border-color = #00000000
+
+padding-left = 0
+padding-right = 2
+
+module-margin-left = 1
+module-margin-right = 2
+
+font-0 = xft:inconsolata 8;1
+font-1 = unifont:fontformat=truetype:size=18:antialias=false;0
+font-2 = siji:size=8;1
+
+modules-left = bspwm i3
+modules-center = 
+modules-right = filesystem volume system-gpu-usage system-gpu-frequency system-gpu-temp memory cpu system-cpu-frequency system-cpu-temp wlan eth battery temperature date
+
+tray-position = right
+tray-padding = 2
+;tray-transparent = true
+;tray-background = #0063ff
+
+;wm-restack = bspwm
+wm-restack = i3
+
+bottom = true
+
+;override-redirect = true
+
+;scroll-up = bspwm-desknext
+;scroll-down = bspwm-deskprev
+
+;scroll-up = i3wm-wsnext
+;scroll-down = i3wm-wsprev
+
 [bar/example]
 ;monitor = ${env:MONITOR:HDMI-1}
 width = 100%
