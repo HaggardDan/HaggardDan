@@ -95,6 +95,8 @@ sudo apt -y install kazam kendlive vlc
 # vscode
 # in VMs this makes it move fast enough
 # "vim.statusBarColorControl": false,
+# make remaps of keys work
+# "keyboard.dispatch": "keyCode"
 
 # i3pystatus
 virtualenv -p python3 ~/.config/i3/venv
