@@ -1,0 +1,8 @@
+#! /bin/bash
+
+VPN="SM HQ" 
+if [[ -n $(expressvpn status | grep "Not connected") ]]; then 
+expressvpn connect
+else 
+expressvpn disconnect
+fi
