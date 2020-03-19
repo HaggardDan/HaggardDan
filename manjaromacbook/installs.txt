@@ -1,0 +1,2 @@
+
+sudo pacman -Sy i3 gvim picom alacritty
