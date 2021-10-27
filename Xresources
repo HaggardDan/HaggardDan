@@ -1,12 +1,14 @@
 ! URxvt -------------------------------------------------------------------- 
 URxvt.perl-ext-common:	default,vtwheel
 
-URxvt.foreground:   	#c5c8c6
-URxvt.background:   	#2b3133
+!URxvt.foreground:   	#c5c8c6
+!URxvt.background:   	#2b3133
 URxvt.cursorColor:  	#c5c8c6
 
-URxvt.font: 		xft:inconsolata:pixelsize=14
-#URxvt.font:             xft:Ubuntu Mono:pixelsize=14,style=regular
+URxvt.font: 		xft:Roboto Mono:size=11
+Xft.lcdfilter:      lcdnone
+!URxvt.font: 		xft:inconsolata:pixelsize=14
+!URxvt.font:             xft:Ubuntu Mono:pixelsize=14,style=regular
 
 URxvt.scrollBar:		false
 URxvt.scrollBar_right:	true
@@ -23,27 +25,57 @@ URxvt.termName:		rxvt-256color
 URxvt.keysym.Shift-Control-V: eval:paste_clipboard
 URxvt.keysym.Shift-Control-C: eval:selection_to_clipboard
 
+! Google Material Design
+
+*background 		: #263238
+*foreground 		: #eceff1
+
 ! black
-URxvt.color0  : #000000
-URxvt.color8  : #555555
+*color0  			: #263238
+*color8  			: #37474f
 ! red
-URxvt.color1  : #AA0000
-URxvt.color9  : #FF5555
+*color1  			: #ff9800
+*color9  			: #ffa74d
 ! green
-URxvt.color2  : #00AA00
-URxvt.color10 : #55FF55
+*color2  			: #8bc34a
+*color10 			: #9ccc65
 ! yellow
-URxvt.color3  : #AA5500
-URxvt.color11 : #FFFF55
+*color3  			: #ffc107
+*color11 			: #ffa000
 ! blue
-URxvt.color4  : #0000AA
-URxvt.color12 : #5555FF
+*color4  			: #03a9f4
+*color12 			: #81d4fa
 ! magenta
-URxvt.color5  : #AA00AA
-URxvt.color13 : #FF55FF
+*color5  			: #e91e63
+*color13 			: #ad1457
 ! cyan
-URxvt.color6  : #00AAAA
-URxvt.color14 : #55FFFF
+*color6  			: #009688
+*color14 			: #26a69a
 ! white
-URxvt.color7  : #AAAAAA
-URxvt.color15 : #FFFFFF
+*color7  			: #cfd8dc
+*color15 			: #eceff1
+
+! black
+!URxvt.color0  : #000000
+!URxvt.color8  : #555555
+! red
+!URxvt.color1  : #AA0000
+!URxvt.color9  : #FF5555
+! green
+!URxvt.color2  : #00AA00
+!URxvt.color10 : #55FF55
+! yellow
+!URxvt.color3  : #AA5500
+!URxvt.color11 : #FFFF55
+! blue
+!URxvt.color4  : #0000AA
+!URxvt.color12 : #5555FF
+! magenta
+!URxvt.color5  : #AA00AA
+!URxvt.color13 : #FF55FF
+! cyan
+!URxvt.color6  : #00AAAA
+!URxvt.color14 : #55FFFF
+! white
+!URxvt.color7  : #AAAAAA
+!URxvt.color15 : #FFFFFF
